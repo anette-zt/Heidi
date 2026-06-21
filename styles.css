@@ -1,0 +1,120 @@
+body {
+    background-color: #fff0f5; /* Rosa pastel de fondo */
+    color: #4a4a4a; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff; 
+    margin: 0;
+    font-size: 2.2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #d147a3; /* Rosa encendido para los títulos */
+    border-bottom: 2px solid #ffb3d9;
+    padding-bottom: 5px;
+}
+
+header {
+    background-color: #ff66b2; /* Encabezado rosa brillante */
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #ff66b2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    background-color: #fff5f8;
+    padding: 20px 40px;
+    border-radius: 8px;
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #d147a3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff66b2;
+}
+
+.galeria {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.galeria img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff5f8;
+}
+
+th, td {
+    border: 1px solid #ffb3d9;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff66b2; 
+    color: white;
+}
+
+.menu-navegacion {
+    list-style-type: none;
+    padding: 15px;
+    background-color: #fff5f8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
