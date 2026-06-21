@@ -3,7 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <title>La Biografía de Mi Persona Favorita 💖</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #fff0f5;
+            color: #4a4a4a; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ffffff; 
+            margin: 0;
+            font-size: 2.2rem;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #d147a3; 
+            border-bottom: 2px solid #ffb3d9;
+            padding-bottom: 5px;
+        }
+        header {
+            background-color: #ff66b2; 
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #ff66b2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+        main {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        ul {
+            background-color: #fff5f8;
+            padding: 20px 40px;
+            border-radius: 8px;
+            list-style-type: square;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #d147a3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #ff66b2;
+        }
+        .galeria {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .galeria img {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+            object-fit: cover;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #fff5f8;
+        }
+        th, td {
+            border: 1px solid #ffb3d9;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #ff66b2; 
+            color: white;
+        }
+        .menu-navegacion {
+            list-style-type: none;
+            padding: 15px;
+            background-color: #fff5f8;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 <body>
 
@@ -47,10 +151,15 @@
             <h2>Su Música Favorita 🎧🎵</h2>
             <p>Tiene un gusto musical increíble, y sus cantantes favoritos de todo el mundo son:</p>
             <ul>
-                <li><strong>Lana Del Rey</strong> ✨👑 </li>
-                <img src="https://www.google.com/search?sca_esv=527eb066153f33b6&rlz=1C1UEAD_esMX1180MX1180&sxsrf=APpeQnubC22sCiFtbavgO3WfXNi_QX5fxw:1782025531437&udm=2&fbs=ABfTbFUDadgeu2mn4mYJ8iEZ1GUDd8ABuXxNzQEi57SWOuuPdfVFhgBbO079P_7XyIRUXsH1Gyj7CHnDxGGR5HAGfGVktWqQtoI6yrI3uN8f89XHXQPUbED4CQvu3IxScKGaD7IG2KmZ89X1CDMICRFHiLTp6r1mviCKteS9mAqj-swP8_1mBTueIQ-A0N3mNKf_Ic0XcCVXdPUHcyucJJ20N5r93zo4Jg&q=lana+del+rey&sa=X&sqi=2&ved=2ahUKEwjzqKC24peVAxVTI0QIHQHEOiEQtKgLegQIExAB&biw=1536&bih=730&dpr=1.25#sv=CAMSURoyKhBlLWMzRHlvRC1sd3lCOFZNMg5jM0R5b0QtbHd5QjhWTToOMVh5aGlocng1SFNMY00gBCoXCgFzEhBlLWMzRHlvRC1sd3lCOFZNGAEwARgHIMqrzoABSggQARgBIAEoAQ" alt="Lana del rey" width="350" height="250">
-                <li><strong>Junior H</strong> </li>
-                    <img src="https://www.google.com/search?sca_esv=527eb066153f33b6&rlz=1C1UEAD_esMX1180MX1180&sxsrf=APpeQnubC22sCiFtbavgO3WfXNi_QX5fxw:1782025531437&udm=2&fbs=ABfTbFUDadgeu2mn4mYJ8iEZ1GUDd8ABuXxNzQEi57SWOuuPdfVFhgBbO079P_7XyIRUXsH1Gyj7CHnDxGGR5HAGfGVktWqQtoI6yrI3uN8f89XHXQPUbED4CQvu3IxScKGaD7IG2KmZ89X1CDMICRFHiLTp6r1mviCKteS9mAqj-swP8_1mBTueIQ-A0N3mNKf_Ic0XcCVXdPUHcyucJJ20N5r93zo4Jg&q=junior+h&sa=X&sqi=2&ved=2ahUKEwjzqKC24peVAxVTI0QIHQHEOiEQtKgLegQIExAB&biw=1536&bih=730&dpr=1.25#sv=CAMSURoyKhBlLWMzRHlvRC1sd3lCOFZNMg5jM0R5b0QtbHd5QjhWTToOMVh5aGlocng1SFNMY00gBCoXCgFzEhBlLWMzRHlvRC1sd3lCOFZNGAEwARgHIMqrzoABSggQARgBIAEoAQ" alt="Junior h" width="350" height="250">
+                <li><strong>Lana Del Rey</strong> ✨👑</li>
+                <div class="galeria">
+                    <img src="lana.jpg" alt="Lana del Rey" width="350" height="250">
+                </div>
+                <br>
+                <li><strong>Junior H</strong> 🎸🔥</li>
+                <div class="galeria">
+                    <img src="junior.jpg" alt="Junior H" width="350" height="250">
+                </div>
             </ul>
         </section>
 
@@ -79,7 +188,7 @@
 
         <!-- MENÚ DE NAVEGACIÓN -->
         <section id="navegacion">
-            <h2>Navegación del amor 🧭</h2>
+            <h2>Navegación</h2>
             <ul class="menu-navegacion">
                 <li><a href="#inicio">Volver al inicio 🔝</a></li>
                 <li><a href="#sobre-ella">Sobre ella 🥰</a></li>
